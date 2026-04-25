@@ -2,7 +2,7 @@ package com.una.models;
 
 public class GasolineCar extends Car {
     
-    // Composición de objetos
+    // Composición de objetos e inmutabilidad de instancias
     private final Engine engine;
     private final Suspension suspension;
     private final DifferentialEquation differentialEquation;
