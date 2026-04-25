@@ -10,6 +10,7 @@ import com.una.models.Suspension;
 public class Main {
     
     public static void assembleCars() {
+        // Aleatorización de componentes para generar distintas combvinaciones de carros
         String[] engines = {"5000 cc", "6000 cc"};
         String[] suspensions = {"ARB 2.5 inches", "TJM 3.5 inches"};
         String[] differentialEquations = {"4.7", "4.9"};
@@ -20,6 +21,8 @@ public class Main {
                 for (String d : differentialEquations) {
                     System.out.println("Car combinations number: " + count);
 
+                    // Polimorfismo aplicado para las instancias de cada carro 
+                    // y la inyección de dependencias a través del constructor
                     Car gasolineCar = new GasolineCar(new Engine(), new Suspension(), new DifferentialEquation());
                     Car dieselCar = new DieselCar(new Engine(), new Suspension(), new DifferentialEquation());
 

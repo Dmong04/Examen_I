@@ -1,11 +1,13 @@
 package com.una.models;
 
 public class GasolineCar extends Car {
-
+    
+    // Composición de objetos
     private final Engine engine;
     private final Suspension suspension;
     private final DifferentialEquation differentialEquation;
 
+    // Inyección de dependencias a través del constructor
     public GasolineCar(Engine engine, Suspension suspension, DifferentialEquation differentialEquation) {
         this.engine = engine;
         this.suspension = suspension;
